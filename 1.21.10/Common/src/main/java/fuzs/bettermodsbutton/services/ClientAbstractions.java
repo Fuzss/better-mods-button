@@ -9,16 +9,6 @@ import org.jetbrains.annotations.Nullable;
 public interface ClientAbstractions {
     ClientAbstractions INSTANCE = ServiceProviderLoader.load(ClientAbstractions.class);
 
-    boolean isDevelopmentEnvironment();
-
-    default boolean isDevelopmentEnvironment(String modId) {
-        if (!this.isDevelopmentEnvironment()) {
-            return false;
-        } else {
-            return Boolean.getBoolean(modId + ".isDevelopmentEnvironment");
-        }
-    }
-
     ClientConfig getClientConfig();
 
     int getModListSize();
