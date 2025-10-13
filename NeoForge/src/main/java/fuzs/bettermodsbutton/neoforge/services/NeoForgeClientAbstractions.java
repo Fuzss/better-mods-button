@@ -8,18 +8,12 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.CommonComponents;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.i18n.FMLTranslations;
-import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.client.gui.ModListScreen;
 import net.neoforged.neoforge.client.gui.widget.ModsButton;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class NeoForgeClientAbstractions implements ClientAbstractions {
-
-    @Override
-    public boolean isDevelopmentEnvironment() {
-        return !FMLEnvironment.isProduction();
-    }
 
     @Override
     public ClientConfig getClientConfig() {
