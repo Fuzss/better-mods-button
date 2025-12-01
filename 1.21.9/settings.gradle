@@ -6,6 +6,8 @@ pluginManagement {
         maven { url "https://maven.neoforged.net/releases/" }
         maven { url "https://maven.minecraftforge.net/" }
     }
+
+    includeBuild("build-logic")
 }
 
 include "Common"

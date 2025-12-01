@@ -127,9 +127,9 @@ tasks.named<Jar>("sourcesJar") {
     from(commonSources.flatMap { it.archiveFile }.map { zipTree(it) })
 }
 
-tasks.named("modrinth") {
-    finalizedBy(tasks.named("refreshUpdateJson"))
-}
-tasks.named("curseforge") {
-    finalizedBy(tasks.named("refreshUpdateJson"))
-}
+//tasks.named("modrinth") {
+//    finalizedBy(tasks.named("refreshUpdateJson"))
+//}
+//tasks.named("curseforge") {
+//    finalizedBy(tasks.named("refreshUpdateJson"))
+//}

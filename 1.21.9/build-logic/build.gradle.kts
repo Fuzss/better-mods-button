@@ -14,7 +14,7 @@ repositories {
 
 dependencies {
     // Add the Architectury Loom plugin as a buildscript dependency so you can import its classes
-    implementation("dev.architectury:architectury-loom:1.11-SNAPSHOT")
+    implementation("dev.architectury:architectury-loom:1.13-SNAPSHOT")
     implementation("architectury-plugin:architectury-plugin.gradle.plugin:3.4-SNAPSHOT")
 
 //    // So you can import Loom's plugin + API in your code
