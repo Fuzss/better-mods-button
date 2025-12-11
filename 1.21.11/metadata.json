@@ -1,0 +1,37 @@
+{
+    "mod": {
+        "id": "bettermodsbutton",
+        "group": "fuzs.bettermodsbutton",
+        "name": "Better Mods Button",
+        "version": "21.11.0",
+        "authors": [
+            "Fuzs"
+        ],
+        "description": "Your mods button, your way. Placed where you want it, customized how you want it!",
+        "license": "MPL-2.0"
+    },
+    "dependencies": [],
+    "links": [
+        {
+            "name": "curseforge",
+            "slug": "better-mods-button",
+            "id": "541584"
+        },
+        {
+            "name": "github",
+            "slug": "bettermodsbutton"
+        },
+        {
+            "name": "modrinth",
+            "slug": "better-mods-button",
+            "id": "KUZAAwdD"
+        }
+    ],
+    "environments": {
+        "client": "required",
+        "server": "unsupported"
+    },
+    "platforms": [
+        "neoforge"
+    ]
+}

@@ -5,7 +5,7 @@ import fuzs.bettermodsbutton.BetterModsButton;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.resources.language.ClientLanguage;
 import net.minecraft.locale.Language;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.resources.PreparableReloadListener;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.ResourceManagerReloadListener;
@@ -25,13 +25,14 @@ public final class ConfigTranslationsManager {
         // NO-OP
     }
 
-    public static void onAddResourcePackReloadListeners(BiConsumer<ResourceLocation, PreparableReloadListener> consumer) {
+    public static void onAddResourcePackReloadListeners(BiConsumer<Identifier, PreparableReloadListener> consumer) {
         consumer.accept(BetterModsButton.id("config_translations"),
                 (ResourceManagerReloadListener) (ResourceManager resourceManager) -> {
                     if (Language.getInstance() instanceof ClientLanguage clientLanguage) {
                         if (!(clientLanguage.storage instanceof HashMap<String, String>)) {
                             clientLanguage.storage = new HashMap<>(clientLanguage.storage);
                         }
+
                         TRANSLATIONS.forEach(clientLanguage.storage::putIfAbsent);
                     }
                 });

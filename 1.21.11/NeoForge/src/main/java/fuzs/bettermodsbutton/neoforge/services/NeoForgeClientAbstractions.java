@@ -13,7 +13,8 @@ import net.neoforged.neoforge.client.gui.widget.ModsButton;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class NeoForgeClientAbstractions implements ClientAbstractions {
+@SuppressWarnings("UnstableApiUsage")
+public final class NeoForgeClientAbstractions implements ClientAbstractions {
 
     @Override
     public ClientConfig getClientConfig() {
