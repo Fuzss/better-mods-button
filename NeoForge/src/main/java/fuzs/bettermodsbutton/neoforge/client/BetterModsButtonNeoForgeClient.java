@@ -20,7 +20,6 @@ import net.neoforged.neoforge.client.event.ScreenEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.forge.snapshots.ForgeSnapshotsMod;
 import net.neoforged.neoforge.internal.BrandingControl;
 
 import java.lang.invoke.MethodHandles;
@@ -93,8 +92,9 @@ public class BetterModsButtonNeoForgeClient {
             try {
                 Field brandings = BrandingControl.class.getDeclaredField("brandings");
                 brandings.setAccessible(true);
-                String s = "Minecraft " + SharedConstants.getCurrentVersion().name() + "/"
-                        + ForgeSnapshotsMod.BRANDING_NAME + ClientAbstractions.INSTANCE.getModListMessage();
+                String s =
+                        "Minecraft " + SharedConstants.getCurrentVersion().name() + "/" + BrandingControl.BRANDING_NAME
+                                + ClientAbstractions.INSTANCE.getModListMessage();
                 MethodHandles.lookup().unreflectSetter(brandings).invoke(Collections.singletonList(s));
                 Field overCopyrightBrandings = BrandingControl.class.getDeclaredField("overCopyrightBrandings");
                 overCopyrightBrandings.setAccessible(true);

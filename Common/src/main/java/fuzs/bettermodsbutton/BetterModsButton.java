@@ -1,6 +1,6 @@
 package fuzs.bettermodsbutton;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,7 +9,7 @@ public class BetterModsButton {
     public static final String MOD_NAME = "Better Mods Button";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
 
-    public static ResourceLocation id(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    public static Identifier id(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 }
