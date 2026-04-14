@@ -4,7 +4,7 @@
 
 | Branch | Status | Changelog | NeoForge |
 | --- | --- | --- | --- |
-| [26.1.x](https://github.com/Fuzss/better-mods-button/tree/26.1.x) | ✅&nbsp;Primary | [CHANGELOG.md](https://github.com/Fuzss/better-mods-button/blob/26.1.x/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-mods-button/files/all?version=26.1&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/better-mods-button/versions?g=26.1&l=neoforge) |
+| [26.1.x](https://github.com/Fuzss/better-mods-button/tree/26.1.x) | ✅&nbsp;Primary | [CHANGELOG.md](https://github.com/Fuzss/better-mods-button/blob/26.1.x/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-mods-button/files/all?version=26.1.2&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/better-mods-button/versions?g=26.1.2&l=neoforge) |
 
 ### Minecraft 1.21.x
 
