@@ -1,4 +1,4 @@
-package fuzs.bettermodsbutton.services;
+package fuzs.bettermodsbutton.common.services;
 
 import java.util.ServiceLoader;
 

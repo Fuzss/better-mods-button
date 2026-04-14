@@ -1,4 +1,4 @@
-package fuzs.bettermodsbutton.config;
+package fuzs.bettermodsbutton.common.config;
 
 public enum PauseScreenMode {
     REPLACE_FEEDBACK,

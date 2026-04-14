@@ -1,9 +1,10 @@
 {
+    "minecraft": "26.1.2",
     "mod": {
         "id": "bettermodsbutton",
         "group": "fuzs.bettermodsbutton",
         "name": "Better Mods Button",
-        "version": "21.11.0",
+        "version": "26.1.0",
         "authors": [
             "Fuzs"
         ],
@@ -19,7 +20,7 @@
         },
         {
             "name": "github",
-            "slug": "bettermodsbutton"
+            "slug": "better-mods-button"
         },
         {
             "name": "modrinth",

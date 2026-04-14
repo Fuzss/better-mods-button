@@ -1,4 +1,4 @@
-package fuzs.bettermodsbutton.config;
+package fuzs.bettermodsbutton.common.config;
 
 import java.util.function.Supplier;
 

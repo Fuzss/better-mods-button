@@ -1,6 +1,6 @@
 package fuzs.bettermodsbutton.neoforge;
 
-import fuzs.bettermodsbutton.BetterModsButton;
+import fuzs.bettermodsbutton.common.BetterModsButton;
 import fuzs.bettermodsbutton.neoforge.config.NeoForgeClientConfig;
 import net.minecraft.data.metadata.PackMetadataGenerator;
 import net.minecraft.network.chat.Component;

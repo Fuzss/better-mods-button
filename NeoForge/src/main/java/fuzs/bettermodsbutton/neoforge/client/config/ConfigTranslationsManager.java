@@ -1,7 +1,7 @@
 package fuzs.bettermodsbutton.neoforge.client.config;
 
 import com.electronwill.nightconfig.core.UnmodifiableConfig;
-import fuzs.bettermodsbutton.BetterModsButton;
+import fuzs.bettermodsbutton.common.BetterModsButton;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.resources.language.ClientLanguage;
 import net.minecraft.locale.Language;

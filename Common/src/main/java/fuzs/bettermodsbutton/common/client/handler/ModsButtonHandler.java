@@ -1,9 +1,9 @@
-package fuzs.bettermodsbutton.client.handler;
+package fuzs.bettermodsbutton.common.client.handler;
 
-import fuzs.bettermodsbutton.config.MainMenuMode;
-import fuzs.bettermodsbutton.config.ModCountMode;
-import fuzs.bettermodsbutton.config.PauseScreenMode;
-import fuzs.bettermodsbutton.services.ClientAbstractions;
+import fuzs.bettermodsbutton.common.config.MainMenuMode;
+import fuzs.bettermodsbutton.common.config.ModCountMode;
+import fuzs.bettermodsbutton.common.config.PauseScreenMode;
+import fuzs.bettermodsbutton.common.services.ClientAbstractions;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.events.GuiEventListener;

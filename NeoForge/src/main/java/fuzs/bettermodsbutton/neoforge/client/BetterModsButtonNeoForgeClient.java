@@ -1,13 +1,13 @@
 package fuzs.bettermodsbutton.neoforge.client;
 
 import com.mojang.realmsclient.gui.screens.RealmsNotificationsScreen;
-import fuzs.bettermodsbutton.BetterModsButton;
-import fuzs.bettermodsbutton.client.handler.ModsButtonHandler;
+import fuzs.bettermodsbutton.common.BetterModsButton;
+import fuzs.bettermodsbutton.common.client.handler.ModsButtonHandler;
 import fuzs.bettermodsbutton.neoforge.BetterModsButtonNeoForge;
 import fuzs.bettermodsbutton.neoforge.client.config.ConfigTranslationsManager;
-import fuzs.bettermodsbutton.services.ClientAbstractions;
+import fuzs.bettermodsbutton.common.services.ClientAbstractions;
 import net.minecraft.SharedConstants;
-import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.gui.screens.TitleScreen;
 import net.neoforged.api.distmarker.Dist;
@@ -73,7 +73,7 @@ public class BetterModsButtonNeoForgeClient {
                     field = RealmsNotificationsScreen.class.getDeclaredField("hasUnseenNotifications");
                     field.setAccessible(true);
                     field.set(null, true);
-                    Method method = RealmsNotificationsScreen.class.getDeclaredMethod("drawIcons", GuiGraphics.class);
+                    Method method = RealmsNotificationsScreen.class.getDeclaredMethod("submitIcons", GuiGraphicsExtractor.class);
                     method.setAccessible(true);
                     method.invoke(titleScreen.realmsNotificationsScreen, evt.getGuiGraphics());
                 } catch (ReflectiveOperationException exception) {

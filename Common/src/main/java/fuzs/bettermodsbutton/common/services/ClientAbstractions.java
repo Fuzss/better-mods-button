@@ -1,6 +1,6 @@
-package fuzs.bettermodsbutton.services;
+package fuzs.bettermodsbutton.common.services;
 
-import fuzs.bettermodsbutton.config.ClientConfig;
+import fuzs.bettermodsbutton.common.config.ClientConfig;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import org.jetbrains.annotations.NotNull;

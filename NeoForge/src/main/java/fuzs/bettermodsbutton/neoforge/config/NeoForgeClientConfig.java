@@ -1,10 +1,10 @@
 package fuzs.bettermodsbutton.neoforge.config;
 
-import fuzs.bettermodsbutton.BetterModsButton;
-import fuzs.bettermodsbutton.config.ClientConfig;
-import fuzs.bettermodsbutton.config.MainMenuMode;
-import fuzs.bettermodsbutton.config.ModCountMode;
-import fuzs.bettermodsbutton.config.PauseScreenMode;
+import fuzs.bettermodsbutton.common.BetterModsButton;
+import fuzs.bettermodsbutton.common.config.ClientConfig;
+import fuzs.bettermodsbutton.common.config.MainMenuMode;
+import fuzs.bettermodsbutton.common.config.ModCountMode;
+import fuzs.bettermodsbutton.common.config.PauseScreenMode;
 import fuzs.bettermodsbutton.neoforge.BetterModsButtonNeoForge;
 import net.neoforged.neoforge.common.ModConfigSpec;
 

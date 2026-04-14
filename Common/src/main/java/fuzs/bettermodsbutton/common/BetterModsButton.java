@@ -1,4 +1,4 @@
-package fuzs.bettermodsbutton;
+package fuzs.bettermodsbutton.common;
 
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
