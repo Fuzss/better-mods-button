@@ -6,10 +6,15 @@ import net.minecraft.data.metadata.PackMetadataGenerator;
 import net.minecraft.network.chat.Component;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.neoforged.neoforgespi.language.IModInfo;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.StringJoiner;
 
 @Mod(BetterModsButton.MOD_ID)
 public class BetterModsButtonNeoForge {
@@ -38,5 +43,23 @@ public class BetterModsButtonNeoForge {
         } else {
             return Boolean.getBoolean(modId + ".isDevelopmentEnvironment");
         }
+    }
+
+    public static String getDisplayName(String modId) {
+        return ModList.get()
+                .getModContainerById(modId)
+                .map(ModContainer::getModInfo)
+                .map(IModInfo::getDisplayName)
+                .orElseGet(() -> getCapitalizedString(modId));
+    }
+
+    public static String getCapitalizedString(String string) {
+        String[] strings = string.toLowerCase().split("[\\s_]+");
+        StringJoiner joiner = new StringJoiner(" ");
+        for (String value : strings) {
+            joiner.add(StringUtils.capitalize(value));
+        }
+
+        return joiner.toString();
     }
 }

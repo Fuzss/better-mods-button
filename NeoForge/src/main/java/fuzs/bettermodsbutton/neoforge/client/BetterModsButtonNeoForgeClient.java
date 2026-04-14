@@ -3,9 +3,9 @@ package fuzs.bettermodsbutton.neoforge.client;
 import com.mojang.realmsclient.gui.screens.RealmsNotificationsScreen;
 import fuzs.bettermodsbutton.common.BetterModsButton;
 import fuzs.bettermodsbutton.common.client.handler.ModsButtonHandler;
-import fuzs.bettermodsbutton.neoforge.BetterModsButtonNeoForge;
-import fuzs.bettermodsbutton.neoforge.client.config.ConfigTranslationsManager;
 import fuzs.bettermodsbutton.common.services.ClientAbstractions;
+import fuzs.bettermodsbutton.neoforge.BetterModsButtonNeoForge;
+import fuzs.bettermodsbutton.neoforge.client.config.CustomConfigurationScreen;
 import net.minecraft.SharedConstants;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.client.gui.screens.Screen;
@@ -14,10 +14,7 @@ import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfigs;
-import net.neoforged.neoforge.client.event.AddClientReloadListenersEvent;
 import net.neoforged.neoforge.client.event.ScreenEvent;
-import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.internal.BrandingControl;
@@ -31,17 +28,11 @@ import java.util.Collections;
 public class BetterModsButtonNeoForgeClient {
 
     public BetterModsButtonNeoForgeClient(ModContainer modContainer) {
-        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
-        ModConfigs.getModConfigs(BetterModsButton.MOD_ID).forEach(ConfigTranslationsManager::addModConfig);
-        registerLoadingHandlers(modContainer.getEventBus());
+        modContainer.registerExtensionPoint(IConfigScreenFactory.class, (ModContainer modContainerX, Screen screen) -> {
+            return new CustomConfigurationScreen(modContainerX.getModId(), screen);
+        });
         registerEventHandlers(NeoForge.EVENT_BUS);
         setupDevelopmentEnvironment();
-    }
-
-    private static void registerLoadingHandlers(IEventBus eventBus) {
-        eventBus.addListener((final AddClientReloadListenersEvent evt) -> {
-            ConfigTranslationsManager.onAddResourcePackReloadListeners(evt::addListener);
-        });
     }
 
     private static void registerEventHandlers(IEventBus eventBus) {
@@ -73,7 +64,8 @@ public class BetterModsButtonNeoForgeClient {
                     field = RealmsNotificationsScreen.class.getDeclaredField("hasUnseenNotifications");
                     field.setAccessible(true);
                     field.set(null, true);
-                    Method method = RealmsNotificationsScreen.class.getDeclaredMethod("submitIcons", GuiGraphicsExtractor.class);
+                    Method method = RealmsNotificationsScreen.class.getDeclaredMethod("extractIcons",
+                            GuiGraphicsExtractor.class);
                     method.setAccessible(true);
                     method.invoke(titleScreen.realmsNotificationsScreen, evt.getGuiGraphics());
                 } catch (ReflectiveOperationException exception) {
