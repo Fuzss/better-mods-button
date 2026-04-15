@@ -2,15 +2,15 @@
 
 ### Minecraft 26.x
 
-| Branch | Status | Changelog | NeoForge |
-| --- | --- | --- | --- |
-| [26.1.x](https://github.com/Fuzss/better-mods-button/tree/26.1.x) | ✅&nbsp;Primary | [CHANGELOG.md](https://github.com/Fuzss/better-mods-button/blob/26.1.x/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-mods-button/files/all?version=26.1.2&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/better-mods-button/versions?g=26.1.2&l=neoforge) |
+| Branch | Status | Changelog | NeoForge | Maven |
+| --- | --- | --- | --- | --- |
+| [26.1.x](https://github.com/Fuzss/better-mods-button/tree/26.1.x) | ✅&nbsp;Primary | [CHANGELOG.md](https://github.com/Fuzss/better-mods-button/blob/26.1.x/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-mods-button/files/all?version=26.1.2&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/better-mods-button/versions?g=26.1.2&l=neoforge) | [`fuzs.bettermodsbutton:bettermodsbutton-common:26.1.1`](https://github.com/Fuzss/modresources/tree/main/maven/fuzs/bettermodsbutton/bettermodsbutton-common/26.1.1)<br />[`fuzs.bettermodsbutton:bettermodsbutton-neoforge:26.1.1`](https://github.com/Fuzss/modresources/tree/main/maven/fuzs/bettermodsbutton/bettermodsbutton-neoforge/26.1.1) |
 
 ### Minecraft 1.21.x
 
-| Branch | Status | Changelog | NeoForge |
-| --- | --- | --- | --- |
-| [1.21.11](https://github.com/Fuzss/better-mods-button/tree/1.21.11) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/better-mods-button/blob/1.21.11/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-mods-button/files/all?version=1.21.11&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/better-mods-button/versions?g=1.21.11&l=neoforge) |
+| Branch | Status | Changelog | NeoForge | Maven |
+| --- | --- | --- | --- | --- |
+| [1.21.11](https://github.com/Fuzss/better-mods-button/tree/1.21.11) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/better-mods-button/blob/1.21.11/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-mods-button/files/all?version=1.21.11&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/better-mods-button/versions?g=1.21.11&l=neoforge) | [`fuzs.bettermodsbutton:bettermodsbutton-common:21.11.0`](https://github.com/Fuzss/modresources/tree/main/maven/fuzs/bettermodsbutton/bettermodsbutton-common/21.11.0)<br />[`fuzs.bettermodsbutton:bettermodsbutton-neoforge:21.11.0`](https://github.com/Fuzss/modresources/tree/main/maven/fuzs/bettermodsbutton/bettermodsbutton-neoforge/21.11.0) |
 
 | Branch | Status | Changelog | Downloads |
 | --- | --- | --- | --- |
