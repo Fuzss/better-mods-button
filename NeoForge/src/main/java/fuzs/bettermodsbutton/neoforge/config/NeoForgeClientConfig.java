@@ -1,6 +1,5 @@
 package fuzs.bettermodsbutton.neoforge.config;
 
-import fuzs.bettermodsbutton.common.BetterModsButton;
 import fuzs.bettermodsbutton.common.config.ClientConfig;
 import fuzs.bettermodsbutton.common.config.MainMenuMode;
 import fuzs.bettermodsbutton.common.config.ModCountMode;
@@ -36,8 +35,7 @@ public class NeoForgeClientConfig implements ClientConfig {
                 .defineInRange("safe_area", 24, 0, Integer.MAX_VALUE);
         this.collapseBranding = builder.comment(
                         "Make title screen game branding more compact to prevent overlapping with menu buttons.")
-                .define("collapse_branding",
-                        BetterModsButtonNeoForge.isDevelopmentEnvironment(BetterModsButton.MOD_ID));
+                .define("collapse_branding", BetterModsButtonNeoForge.isDevelopmentEnvironment());
         this.spec = builder.build();
     }
 
