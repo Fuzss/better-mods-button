@@ -1,10 +1,8 @@
 {
   "published": true,
   "branches": {
-    "1.21.11": "archived",
-    "1.21.1": "maintained",
-    "1.20.1": "fixes",
-    "26.1.x": "maintained",
-    "26.2.x": "primary"
+    "26.1.x": "fixes",
+    "1.21.1": "fixes",
+    "1.20.1": "fixes"
   }
 }
